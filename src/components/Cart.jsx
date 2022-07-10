@@ -7,9 +7,9 @@ import { useSelector, useDispatch } from 'react-redux'
 function Cart() {
     const itemsInCart = useSelector((state)=>state.cart.itemsInCart)
 
-    const cartList = itemsInCart.map((item)=>{
+    const cartList = itemsInCart.map((item, index)=>{
         return(
-            <CartItem key={Math.random()} item={item}/>
+            <CartItem number={index+1} key={Math.random()} item={item}/>
         )
     })
     
