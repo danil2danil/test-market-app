@@ -1,0 +1,27 @@
+.cart{
+    width: 400px;
+    background: #20c997;
+    border-radius: 15px;
+    padding: 25px;
+    color: black;
+
+    &__item{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: black;
+        background: white;
+        border-radius: 15px;
+        margin: 5px 0px;
+
+        &-title{
+            flex-basis: 150px;
+            text-align: left;
+        }
+
+        &-price{
+            text-align: left;
+            flex-basis: 100px;
+        }
+    }
+}
